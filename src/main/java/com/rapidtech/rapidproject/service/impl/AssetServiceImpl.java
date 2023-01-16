@@ -19,7 +19,7 @@ public class AssetServiceImpl implements AssetService {
     private AssetRepository assetRepository;
 
     @Override
-    public List<AssetResDto> getAllStudent() {
+    public List<AssetResDto> getAllAsset() {
         List<Asset> assets = assetRepository.findAll();
         List<AssetResDto> assetResDtoList = new ArrayList<>();
         for (Asset asset : assets) {

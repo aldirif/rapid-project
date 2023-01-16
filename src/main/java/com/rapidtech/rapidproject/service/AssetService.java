@@ -6,7 +6,7 @@ import com.rapidtech.rapidproject.dto.AssetResDto;
 import java.util.List;
 
 public interface AssetService {
-    List<AssetResDto> getAllStudent();
+    List<AssetResDto> getAllAsset();
     AssetResDto insertAsset(AssetReqDto assetReqDto);
     AssetResDto updateAsset(Long id, AssetReqDto assetReqDto);
     void deleteAsset(Long id);

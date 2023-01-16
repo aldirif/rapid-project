@@ -17,27 +17,11 @@ public class Asset {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
-    @Column(name = "asset_no", length = 120)
     private String assetNo;
-
-    @Column(name = "asset_name", length = 120)
     private String assetName;
-
-    @Column(name = "type", length = 120)
     private String type;
-
-    @Column(name = "serial_number", length = 120)
     private String serialNumber;
-
-    @Column(name = "purchase_year", length = 120)
     private Long purchaseYear;
-
-    @Column(name = "status", length = 120)
     private Boolean status;
 
-    @JsonIgnore
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn
-    RequestAsset requestAsset;
 }

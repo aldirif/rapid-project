@@ -17,7 +17,7 @@ public class AssetController {
 
     @GetMapping
     public List<AssetResDto> getAllAsset(){
-        return assetService.getAllStudent();
+        return assetService.getAllAsset();
     }
 
     @PostMapping

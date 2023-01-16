@@ -5,15 +5,12 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.swing.*;
-import java.util.List;
-
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class RequestAssetReqDto {
-    private String picName;
-    private String address;
-    private String specification;
+public class RequestAssetWithApprovalDto {
+    private Long requestAssetId;
+    private Long approvalStatusId;
+
 }

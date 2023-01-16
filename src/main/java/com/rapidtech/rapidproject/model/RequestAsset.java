@@ -20,12 +20,7 @@ public class RequestAsset {
     private Long id;
     private String picName;
     private String address;
-
-    @OneToMany(mappedBy = "requestAsset",cascade = CascadeType.PERSIST,fetch = FetchType.LAZY)
-    private List<Asset> assets;
-
-    @JsonIgnore
-    @OneToOne(fetch = FetchType.LAZY)
-    @JoinColumn
-    Approval approval;
+    private String specification;
+    private Boolean approvalStatus;
+    private String reason;
 }
