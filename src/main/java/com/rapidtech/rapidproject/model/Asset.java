@@ -24,4 +24,9 @@ public class Asset {
     private Long purchaseYear;
     private Boolean status;
 
+    @JsonIgnore
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn
+    Audit audit;
+
 }
